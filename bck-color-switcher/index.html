@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background color switcher</title>
+    <style>
+        body{
+            margin:0;
+            padding:20px 100px
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            width: 27rem;
+            height:37rem;
+            margin: 0 auto;
+            margin-right: 10px;
+        }
+        p{
+            display:inline-block;
+            font-size: 22px;
+            text-align: justify;
+            width: 60rem;
+            height: 140px;
+            margin-left: 10px;
+        }
+        .btn{
+            width:20px;
+            height:20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white
+        {
+            background-color: white;
+        }
+        #black{
+            background-color: black;
+        }
+        #indianred
+        {
+            background-color: #CD5C5C;
+        }
+        #Aquamarine
+        {
+            background-color: #7FFFD4;
+        }
+        #Darkcayan
+        {
+            background-color: #008B8B;
+        }
+        #color-switcher
+        {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="chngbg('#ffffff')"></span>
+        <span class="btn" id="black"onclick="chngbg('#000000')"></span>
+        <span class="btn" id="indianred"onclick="chngbg('#CD5C5C')"></span>
+        <span class="btn" id="Aquamarine"onclick="chngbg('#7FFFD4')"></span>
+        <span class="btn" id="Darkcayan"onclick="chngbg('#008B8B')"></span>
+   
+      <h1 class="text">ABOUT ME</h1>
+      <img src="image.jpg" alt="">
+     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores eius officiis delectus optio cupiditate ipsum a nulla temporibus ea deleniti asperiores at nobis hic, natus numquam nisi. Fugiat, similique?
+        Minima distinctio blanditiis aliquam quaerat earum, incidunt magni a doloribus et nulla itaque autem iste possimus necessitatibus tenetur beatae ipsa harum nam consequuntur esse totam amet sequi temporibus! Explicabo, culpa.
+        Soluta vitae nisi voluptatem deleniti ipsa quaerat quibusdam natus accusantium labore maxime itaque at magnam laboriosam facilis placeat dicta praesentium quo eius, deserunt reiciendis, iure tempore est error ex. Nemo?
+        Esse, reiciendis magni officia error nulla necessitatibus, impedit dignissimos distinctio, saepe in facere delectus. Ducimus error, distinctio sequi officiis accusantium voluptas laudantium cumque magnam? Iusto repellendus similique consectetur natus dolore!
+        Quo quidem voluptatibus molestias sunt excepturi vitae modi voluptates non? Eaque repellendus nisi reiciendis tenetur consequuntur ut molestiae velit quo amet adipisci delectus culpa ea eveniet, dolore nemo nostrum magnam.
+        Sit in dolore consequuntur maiores temporibus ipsam aut dolorem eum perferendis dignissimos est doloremque molestias illum quae porro facilis, eligendi repellat? Ea repellat repudiandae dolore in obcaecati totam quibusdam esse.
+        Blanditiis repellat deleniti provident iure dignissimos doloribus quibusdam et facilis, itaque iusto nostrum eius modi temporibus magnam aliquid nesciunt animi commodi quo magni! Ipsa cumque deserunt aut dolore est maxime.
+        Perspiciatis quam quae ab commodi eius alias minima voluptatibus sunt quisquam id cum autem, nam magnam assumenda, possimus aliquid. Eius provident non minima optio doloremque, recusandae perspiciatis sit dolores officiis?
+        Porro quod iure veritatis architecto sunt excepturi iusto pariatur quam ut. Architecto culpa maiores nobis cum mollitia eveniet deleniti, distinctio quas blanditiis provident. Soluta pariatur ratione natus cumque facere voluptatem!
+        Aliquam quia ex ratione accusamus. Alias a veritatis sequi expedita dicta voluptatibus eligendi? Ut aliquid possimus vel nesciunt rem quis obcaecati, ipsa labore animi dolor. Provident libero eum quis aperiam
+      </p>
+</div>
+<script>
+    function chngbg(color)
+    {
+        document.body.style.backgroundColor=color;
+        let txt=document.getElementsByClassName("text")
+        if(color=="#000000")
+        {
+            for(let elm of txt)
+            {
+                elm.style.color="white"
+            }
+        }
+        else{
+            for(let elm of txt)
+            {
+                elm.style.color="black"
+            }
+        }
+    }
+</script>
+</body>
+</html>
